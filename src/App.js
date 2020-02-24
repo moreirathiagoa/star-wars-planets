@@ -55,11 +55,17 @@ class App extends Component{
 
   //method to get next aleatory planet
   nextPlanet =()=>{
+
+    //call function to get total planets if appState information is zero
+    if (this.state.totalPlanets === 0)
+      this.getTotalPlanet(this.planetAPIURL); 
+
+    //call server to get next planet
     serverGetPlanet(this);
 
     //call getTotalPlanet to save more cache
     if (this.state.nextUrl !== null)
-      this.getTotalPlanet(this.state.nextUrl)
+      this.getTotalPlanet(this.state.nextUrl) 
       
     //set localstorange planetscache and last save data
     localStorage.setItem('starWarsState', JSON.stringify(this.state.planetsCache));

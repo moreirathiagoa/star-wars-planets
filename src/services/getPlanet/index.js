@@ -1,9 +1,5 @@
 export default (appState) => {
   
-  //call function to get total planets if appState information is zero
-  if (appState.state.totalPlanets === 0)
-    appState.getTotalPlanet();
-
   //get aleatory number from ramdom method of Math class and complete the URL of API
   let aleatoryNumber = Math.floor(Math.random() * appState.state.totalPlanets) + 1;
   let planetAPIURL = appState.planetAPIURL+aleatoryNumber+'/';
