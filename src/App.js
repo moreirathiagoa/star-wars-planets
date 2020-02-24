@@ -85,7 +85,7 @@ class App extends Component{
             <div>
               {this.state.errorLoading ?
                 <div>
-                  <Error/>
+                  <Error errorMessage="Problems during server access."/>
                 </div>:
                 <div>
                   {this.state.planet.url !== null ?

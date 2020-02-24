@@ -5,7 +5,7 @@ class Error extends Component{
   render(){
     return(
       <div className="erro-message">
-        Problems during server access.
+        {this.props.errorMessage}
       </div>
     );
   }

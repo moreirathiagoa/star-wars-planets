@@ -20,13 +20,13 @@ class Planet extends Component{
         </div>
         <div className="planet-data"> 
           <div className="content-data">
-            <div className="data">{this.props.planet.population}</div>
+            <div data-testid="population" className="data">{this.props.planet.population}</div>
             <div className="label"><strong>Population:</strong> </div>
-            <div className="data">{this.props.planet.climate}</div>
+            <div data-testid="climated" className="data">{this.props.planet.climate}</div>
             <div className="label"><strong>Climated:</strong> </div>
-            <div className="data">{this.props.planet.terrain}</div>
+            <div data-testid="terrain" className="data">{this.props.planet.terrain}</div>
             <div className="label"><strong>Terrain:</strong> </div><br/>
-            <div className="data">{totaFfilms}</div>
+            <div data-testid="totalFilms" className="data">{totaFfilms}</div>
             <div className="label"><strong>Features in:</strong> </div>
           </div>
         </div>
