@@ -1,0 +1,30 @@
+.button-container{
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  left: 30%;
+}
+
+.button{
+  margin: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 35%;
+  font-size: 25px;
+  font-weight: bolder;
+  background-color: #eade4e;
+  border-color: #ccc;
+  color: #0c0c0cd4;
+}
+
+.button:hover{
+  color: #eade4e;
+  background-color: #2e2d2dd4;
+}
+
+.button:active{
+  color: #eade4e;
+  background-color: #0c0c0cd4;
+}

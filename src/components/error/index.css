@@ -1,0 +1,8 @@
+.erro-message{
+  border-radius: 10px;
+  background-color: #0c0c0cd4;
+  height: 215px;
+  padding-top: 30px;
+  font-size: 20px;
+  text-align: center;
+}

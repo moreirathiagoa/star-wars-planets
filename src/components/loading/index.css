@@ -1,0 +1,10 @@
+.loading{
+  margin-top: 50px;
+  align-items: center;
+}
+
+.loading img{
+  width: 150px;
+  position: relative;
+  left: 30%;
+}
