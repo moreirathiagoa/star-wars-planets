@@ -6,12 +6,14 @@ import Button from "./";
 
 let container = null;
 beforeEach(() => {
+
   //configure DOM element as render
   container = document.createElement("div");
   document.body.appendChild(container);
 });
 
 afterEach(() => {
+  
   // clean after finish
   unmountComponentAtNode(container);
   container.remove();

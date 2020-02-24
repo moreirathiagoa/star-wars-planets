@@ -1,17 +1,18 @@
 import React from "react";
 import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils";
-
 import Error from "./";
 
 let container = null;
 beforeEach(() => {
+
   //configure DOM element as render
   container = document.createElement("div");
   document.body.appendChild(container);
 });
 
 afterEach(() => {
+  
   // clean after finish
   unmountComponentAtNode(container);
   container.remove();
