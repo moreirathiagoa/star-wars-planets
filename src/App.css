@@ -8,11 +8,29 @@
   padding-bottom: 10px;
 }
 
-.aplication{
-  margin-top: 15px;
-  display: flex;
-  width: 400px;
-  height: 375px;
-  border-radius: 10px;
-  flex-direction: column;
+@media screen and (max-width:500px)  {
+  .aplication{
+    position: absolute;
+    overflow-y: scroll;
+    margin: 10px;
+    min-width: 0px;
+    margin-top: 10px;
+    align-self: center;
+    right: 0;
+    bottom: 2%;
+    left: 0;
+    top: 1%;
+  }
+}
+
+@media screen and (min-width:500px)  {
+  .aplication{
+    margin-top: 10px;
+    align-self: center;
+    right: 0;
+    bottom: 2%;
+    left: 0;
+    top: 1%;
+    min-width: 400px;
+  }
 }
