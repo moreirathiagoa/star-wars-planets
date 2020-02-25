@@ -4,7 +4,7 @@ import './index.css';
 class Button extends Component{
   render(){
     return(
-      <div className="button-container">
+      <div align="center">
         <button onClick={this.props.onClick} className="button">{this.props.buttonName}</button>
       </div>
     );
