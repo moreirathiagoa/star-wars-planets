@@ -46,6 +46,7 @@ class App extends Component{
     let starWarsState = localStorage.getItem('starWarsState');
     if (starWarsState !== null)
       this.setState({planetsCache:JSON.parse(starWarsState)});
+    //this.nextPlanet();
   }
   
   //get total planet and cache first page of API
@@ -54,7 +55,8 @@ class App extends Component{
   }
 
   //method to get next aleatory planet
-  nextPlanet =()=>{
+  nextPlanet = ()=>{
+    console.log("botão apertad");
 
     //call function to get total planets if appState information is zero
     if (this.state.totalPlanets === 0)
