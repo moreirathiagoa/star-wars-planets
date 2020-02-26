@@ -11,20 +11,20 @@ export default (appState, planetAPIURL) =>{
       appState.setState(state);
       
       //for each planet on the first list got on the API message
-      json.results.map((item)=>{
+      json.results.map((planetJson)=>{
 
-        //filter each item of message on the stage planets cache 
-        //  and return item if ir not exists on cache
+        //filter each planetJson of message on the stage planets cache 
+        //  and return planetJson if ir not exists on cache
         let state = appState.state;
-        let filterResult = state.planetsCache.filter((itm)=>{
-          if (itm !== undefined)
-            return(item.url === itm.url);
+        let filterResult = state.planetsCache.filter((planetFiltred)=>{
+          if (planetFiltred !== undefined)
+            return(planetJson.url === planetFiltred.url);
           return null;
         });
 
-        //add item to cache
+        //add planetJson to cache
         if(filterResult.length === 0){
-          state.planetsCache = [...state.planetsCache,item];
+          state.planetsCache = [...state.planetsCache,planetJson];
         }
         appState.setState(state);
         return null;

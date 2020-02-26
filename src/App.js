@@ -56,7 +56,6 @@ class App extends Component{
 
   //method to get next aleatory planet
   nextPlanet = ()=>{
-    console.log("botão apertad");
 
     //call function to get total planets if appState information is zero
     if (this.state.totalPlanets === 0)
