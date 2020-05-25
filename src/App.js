@@ -29,7 +29,7 @@ class App extends Component{
       nextUrl: null,
       timer: null
     }
-    this.planetAPIURL = 'https://swapi.co/api/planets/';
+    this.planetAPIURL = 'https://swapi.dev/api/planets/';
   }
 
   componentDidMount(){
